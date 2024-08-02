@@ -5,7 +5,7 @@
     </p>
     <div :class="['relative w-full p-[2px] rounded-[13px] min-[1160px]:my-[15px] my-2.5',this.invalidClass? 'focus:border bg-[#E86068] border-[#E86068]': 'focus:bg-gradient-to-l focus-within:bg-gradient-to-l focus from-[#E2C299] from-[6%] to-[94%] to-[#C5A67C]',]">
       <input type="text" v-model="this.seletedOpt" @focus="onFocus" @input="onInput"
-        class="h-[51px] min-[1160px]:px-6 min-[1160px]:py-4 p-4 w-full rounded-[12px] bg-white border border-[#000000]/10 text-[--color-opacity-6] min-[1160px]:text-base text-sm focus:outline-none focus:border-transparent hover:border-[#000000]/30 hover:text-[--color] hover:placeholder:text-[--color]"
+        class="h-[51px] min-[1160px]:text-base text-sm min-[1160px]:px-6 min-[1160px]:py-4 p-4 w-full rounded-[12px] bg-white border border-[#000000]/10 text-[--color-opacity-6] min-[1160px]:text-base text-sm focus:outline-none focus:border-transparent hover:border-[#000000]/30 hover:text-[--color] hover:placeholder:text-[--color]"
         id="name"
         :placeholder="`Минимальная сумма платежа: ${this.minAmount}${this.selectedCurrency == 'USD' ? '$' : '₽'}`" />
       <button v-if="this.seletedOpt" @click="clearInput" class="absolute right-5 top-5">
