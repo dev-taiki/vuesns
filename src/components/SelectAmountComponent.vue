@@ -1,5 +1,5 @@
 <template>
-  <div class="flex gap-x-2.5 overflow-x-auto">
+  <div class="flex min-[1160px]:gap-x-2.5 gap-x-2 overflow-x-auto">
     <div
       v-for="(option, i) of options"
       :key="i"
